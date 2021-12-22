@@ -1,0 +1,30 @@
+{
+  "name": "sponsorblock-checker",
+  "version": "1.0.0",
+  "description": "Checks channels for videos that have no SponsorBlock segments.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tacohitbox/sponsorblock-checker.git"
+  },
+  "keywords": [
+    "sponsorblock",
+    "sponsorblock-api",
+    "youtube",
+    "youtube-api"
+  ],
+  "author": "tacohitbox",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/tacohitbox/sponsorblock-checker/issues"
+  },
+  "homepage": "https://github.com/tacohitbox/sponsorblock-checker#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "sponsorblock-api": "^0.2.2",
+    "yt-channel-info": "^2.2.0"
+  }
+}

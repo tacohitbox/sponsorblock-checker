@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SponsorBlockChecker</title>
+    <meta charset="UTF-8">
+    <link href="/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="top">
+      <h2>SponsorBlockChecker</h2>
+      <p>Webapp that checks YouTube channels for videos that don't have any SponsorBlock segments.</p>
+    </div>
+    <div class="main">
+      <input id="url" placeholder="Insert URL to channel here.">
+      <button onclick="run();">Check channel</button>
+      <div id="err" style="display:none;">
+        <h2>Error!</h2>
+        <p id="err-txt"></p>
+      </div>
+      <div id="loader" style="display:none;">
+        <img src="/load.gif" alt="Loading icon.">
+        <p id="loader-text">Loading...</p>
+      </div>
+      <div id="videolist" style="display:none;"></div>
+      <div id="if-cont" style="display:none;">
+        <button id="cont" onclick="lm(document.getElementById('cont').getAttribute('data-vidid'));">Get More</button>
+      </div>
+    </div>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
